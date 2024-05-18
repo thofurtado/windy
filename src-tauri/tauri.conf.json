@@ -12,6 +12,21 @@
   },
   "tauri": {
     "allowlist": {
+      "os": {
+        "all": true
+      },
+      "shell": {
+        "all": true,
+        "execute": true,
+        "sidecar": true,
+        "open": true,
+        "scope": [
+          {
+            "name": "ip",
+            "cmd": "ipconfig"
+          }
+        ]
+      },
       "all": false
     },
     "bundle": {
